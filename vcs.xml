@@ -12,7 +12,7 @@
         </UrlAndUserName>
         <UrlAndUserName>
           <option name="url" value="http://github.com" />
-          <option name="userName" value="dctikan" />
+          <option name="userName" value="villibarankin" />
         </UrlAndUserName>
         <UrlAndUserName>
           <option name="url" value="http://chat.anveo.com" />
@@ -32,6 +32,10 @@
         </UrlAndUserName>
         <UrlAndUserName>
           <option name="url" value="https://github.com/Tikido/tikido_agent.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://villibarankin@github.com/Tikido/tikido_agent" />
           <option name="userName" value="" />
         </UrlAndUserName>
       </list>
