@@ -1,0 +1,93 @@
+<application>
+  <component name="ProjectJdkTable">
+    <jdk version="2">
+      <name value="Python 3.6 (venv3.6)" />
+      <type value="Python SDK" />
+      <version value="Python 3.6.3" />
+      <homePath value="$USER_HOME$/venv3.6/bin/python" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file:///usr/lib/python3.6" type="simple" />
+            <root url="file:///usr/lib/python3.6/lib-dynload" type="simple" />
+            <root url="file://$USER_HOME$/venv3.6/lib/python3.6/site-packages" type="simple" />
+            <root url="file://$USER_HOME$/venv3.6/src/beanstalkc" type="simple" />
+            <root url="file://$USER_HOME$/venv3.6/src/flask-beanstalk" type="simple" />
+            <root url="file://$USER_HOME$/venv3.6/src/pystalkd" type="simple" />
+            <root url="file://$USER_HOME$/venv3.6/src/json-logic" type="simple" />
+            <root url="file://$USER_HOME$/venv3.6/src/pyflowdock" type="simple" />
+            <root url="file://$USER_HOME$/venv3.6/src/gdata" type="simple" />
+            <root url="file://$USER_HOME$/venv3.6/src/infusionsoft" type="simple" />
+            <root url="file://$USER_HOME$/venv3.6/src/podio-py" type="simple" />
+            <root url="file://$USER_HOME$/venv3.6/src/sugarcrm" type="simple" />
+            <root url="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/789304681" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3.4" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 3.7 (tikido-plugins)" />
+      <type value="Python SDK" />
+      <version value="Python 3.7.0" />
+      <homePath value="$USER_HOME$/venv/tikido-plugins/bin/python" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file:///usr/local/lib/python3.7" type="simple" />
+            <root url="file:///usr/local/lib/python3.7/lib-dynload" type="simple" />
+            <root url="file://$USER_HOME$/venv/tikido-plugins/lib/python3.7/site-packages" type="simple" />
+            <root url="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1588968732" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3.4" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional ASSOCIATED_PROJECT_PATH="$USER_HOME$/PycharmProjects/tikido-plugins" />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 3.7 (test_sip_ping)" />
+      <type value="Python SDK" />
+      <version value="Python 3.7.0" />
+      <homePath value="$USER_HOME$/venv/test_sip_ping/bin/python" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file:///usr/local/lib/python3.7" type="simple" />
+            <root url="file:///usr/local/lib/python3.7/lib-dynload" type="simple" />
+            <root url="file://$USER_HOME$/venv/test_sip_ping/lib/python3.7/site-packages" type="simple" />
+            <root url="jar://$USER_HOME$/venv/test_sip_ping/lib/python3.7/site-packages/setuptools-39.1.0-py3.7.egg!/" type="simple" />
+            <root url="file://$USER_HOME$/venv/test_sip_ping/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg" type="simple" />
+            <root url="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/1326941293" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3.4" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional ASSOCIATED_PROJECT_PATH="$USER_HOME$/PycharmProjects/test_sip_ping" />
+    </jdk>
+  </component>
+</application>

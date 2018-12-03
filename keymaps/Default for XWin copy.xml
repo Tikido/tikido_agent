@@ -1,0 +1,98 @@
+<keymap version="1" name="Default for XWin copy" parent="Default for XWin">
+  <action id="Arrangement.Rule.Match.Condition.Move.Down">
+    <keyboard-shortcut first-keystroke="alt down" />
+    <keyboard-shortcut first-keystroke="alt kp_down" />
+  </action>
+  <action id="Arrangement.Rule.Match.Condition.Move.Up">
+    <keyboard-shortcut first-keystroke="alt up" />
+    <keyboard-shortcut first-keystroke="alt kp_up" />
+  </action>
+  <action id="EditorDown">
+    <keyboard-shortcut first-keystroke="down" />
+    <keyboard-shortcut first-keystroke="kp_down" />
+  </action>
+  <action id="EditorDownWithSelection">
+    <keyboard-shortcut first-keystroke="shift down" />
+    <keyboard-shortcut first-keystroke="shift kp_down" />
+  </action>
+  <action id="EditorLeft">
+    <keyboard-shortcut first-keystroke="left" />
+    <keyboard-shortcut first-keystroke="kp_left" />
+  </action>
+  <action id="EditorLeftWithSelection">
+    <keyboard-shortcut first-keystroke="shift left" />
+    <keyboard-shortcut first-keystroke="shift kp_left" />
+  </action>
+  <action id="EditorLookupDown">
+    <keyboard-shortcut first-keystroke="ctrl down" />
+    <keyboard-shortcut first-keystroke="ctrl kp_down" />
+  </action>
+  <action id="EditorLookupUp">
+    <keyboard-shortcut first-keystroke="ctrl up" />
+    <keyboard-shortcut first-keystroke="ctrl kp_up" />
+  </action>
+  <action id="EditorRight">
+    <keyboard-shortcut first-keystroke="right" />
+    <keyboard-shortcut first-keystroke="kp_right" />
+  </action>
+  <action id="EditorRightWithSelection">
+    <keyboard-shortcut first-keystroke="shift right" />
+    <keyboard-shortcut first-keystroke="shift kp_right" />
+  </action>
+  <action id="EditorScrollDown">
+    <keyboard-shortcut first-keystroke="ctrl down" />
+    <keyboard-shortcut first-keystroke="ctrl kp_down" />
+  </action>
+  <action id="EditorUp">
+    <keyboard-shortcut first-keystroke="up" />
+    <keyboard-shortcut first-keystroke="kp_up" />
+  </action>
+  <action id="EditorUpWithSelection">
+    <keyboard-shortcut first-keystroke="shift up" />
+    <keyboard-shortcut first-keystroke="shift kp_up" />
+  </action>
+  <action id="MethodDown">
+    <keyboard-shortcut first-keystroke="alt down" />
+    <keyboard-shortcut first-keystroke="alt kp_down" />
+  </action>
+  <action id="MoveElementLeft">
+    <keyboard-shortcut first-keystroke="shift ctrl alt left" />
+    <keyboard-shortcut first-keystroke="shift ctrl alt kp_left" />
+  </action>
+  <action id="MoveElementRight">
+    <keyboard-shortcut first-keystroke="shift ctrl alt right" />
+    <keyboard-shortcut first-keystroke="shift ctrl alt kp_right" />
+  </action>
+  <action id="MoveLineDown">
+    <keyboard-shortcut first-keystroke="shift alt down" />
+    <keyboard-shortcut first-keystroke="shift alt kp_down" />
+  </action>
+  <action id="MoveLineUp">
+    <keyboard-shortcut first-keystroke="shift alt up" />
+    <keyboard-shortcut first-keystroke="shift alt kp_up" />
+  </action>
+  <action id="MoveStatementDown">
+    <keyboard-shortcut first-keystroke="shift ctrl down" />
+    <keyboard-shortcut first-keystroke="shift ctrl kp_down" />
+  </action>
+  <action id="MoveStatementUp">
+    <keyboard-shortcut first-keystroke="shift ctrl up" />
+    <keyboard-shortcut first-keystroke="shift ctrl kp_up" />
+  </action>
+  <action id="ResizeToolWindowDown">
+    <keyboard-shortcut first-keystroke="shift ctrl down" />
+    <keyboard-shortcut first-keystroke="shift ctrl kp_down" />
+  </action>
+  <action id="ResizeToolWindowLeft">
+    <keyboard-shortcut first-keystroke="shift ctrl left" />
+    <keyboard-shortcut first-keystroke="shift ctrl kp_left" />
+  </action>
+  <action id="ResizeToolWindowRight">
+    <keyboard-shortcut first-keystroke="shift ctrl right" />
+    <keyboard-shortcut first-keystroke="shift ctrl kp_right" />
+  </action>
+  <action id="ShowContent">
+    <keyboard-shortcut first-keystroke="alt down" />
+    <keyboard-shortcut first-keystroke="alt kp_down" />
+  </action>
+</keymap>
