@@ -1,0 +1,6 @@
+plugins:
+  mysql:
+    default:
+      login: root
+      password: toor
+      port: 3306

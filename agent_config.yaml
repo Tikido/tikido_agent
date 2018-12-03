@@ -1,0 +1,2 @@
+logfile: /var/log/tikido/tikido_agent.log
+port: 8877

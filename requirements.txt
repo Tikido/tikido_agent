@@ -1,0 +1,18 @@
+requests
+pystalkd
+requests
+dnspython
+elasticsearch
+
+# https://github.com/mzupan/nagios-plugin-mongodb/blob/master/check_mongodb.py
+pymongo
+
+
+mysql-connector-python
+requests
+psycopg2-binary
+redis
+#git+https://github.com/pymssql/pymssql.git
+#-e git+https://github.com/pymssql/pymssql.git
+git+https://github.com/dctikan/pymssql.git
+psutil

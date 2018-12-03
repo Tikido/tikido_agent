@@ -1,0 +1,5 @@
+# centos
+freetds-devel
+
+#debian/ubuntu
+freetds-dev
