@@ -40,6 +40,7 @@
   </action>
   <action id="EditorUp">
     <keyboard-shortcut first-keystroke="kp_up" />
+    <keyboard-shortcut first-keystroke="up" />
   </action>
   <action id="EditorUpWithSelection">
     <keyboard-shortcut first-keystroke="shift kp_up" />
