@@ -1,0 +1,30 @@
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="05df6679-f8f5-4369-a5da-17d90e99305c" name="Tikido Worker" url="http://gate.tikido.com">
+        <fileTransfer host="gate.tikido.com" port="3465" rootFolder="/tikido/tikido_py_ibeans" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="3465" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="954265e3-1bb9-493a-a6b4-ed13711d8267" name="ViLLi.BY" url="http://35.202.159.211">
+        <fileTransfer host="35.202.159.211" port="22" privateKey="$USER_HOME$/Downloads/private.ppk" rootFolder="/home/villi_barankin/tiki-agent" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="906edea2-2c8d-4294-9615-7929973f96b1" name="STAGE" url="http://gate.stage.tikido.com">
+        <fileTransfer host="gate.stage.tikido.com" port="3465" rootFolder="/tikido/tikido_py_ibeans" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="3465" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</application>
