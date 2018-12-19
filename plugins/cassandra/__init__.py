@@ -1,0 +1,3 @@
+meta = dict(
+    name='cassandra'
+)

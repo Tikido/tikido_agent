@@ -33,15 +33,16 @@ class IAgentCore(CoreBase):
             res = getattr(self, action_code)(**kwargs)
             return self.widget_suc(vars=res)
         except FileNotFoundError as err:
-            return self.widget_err(type='FileNotFound', message=err)
+            return self.widget_err(err_type='FileNotFound', message=err)
+        except ConnectionError as err:
+            return self.widget_err(err_type='ConnectionError', message=err)
         except Exception as err:
-            return self.widget_err(type='Exception', message=err)
+            return self.widget_err(err_type='Exception', message=err)
 
     @staticmethod
     def widget_suc(**kwargs):
         return dict(result='success', value='success', vars=kwargs.get('vars', {}))
 
-    def widget_err(self, **kwargs):
-        log.exception(f"{kwargs.get('type')}: {kwargs.get('args[-1]')}")
-        return dict(result='error', value=kwargs.get('type'), vars=str(kwargs.get('message')))
-
+    def widget_err(self, err_type, message):
+        log.exception(f"{type}: {message}")
+        return dict(result='error', value=err_type, vars=str(message))

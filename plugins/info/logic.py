@@ -24,27 +24,33 @@ class Logic(IAgentCore):
 
     def directory_count_files(self):
         count = 0
-        for root, dirs, files in os.walk(self.directory):
-            for file in files:
-                if fnmatch.fnmatch(file, self.search_pattern):
-                    count += 1
-            if not self.recursive:
-                break
-        return count
+        if os.path.exists(self.directory):
+            for root, dirs, files in os.walk(self.directory):
+                for file in files:
+                    if fnmatch.fnmatch(file, self.search_pattern):
+                        count += 1
+                if not self.recursive:
+                    break
+            return count
+        else:
+            raise FileNotFoundError(f'Directory {self.directory} not found!')
 
     def directory_total_size(self):
-        size = 0
-        for root, dirs, files in os.walk(self.directory):
-            for file in files:
-                path = os.path.join(root, file)
-                if os.path.exists(path):
-                    try:
-                        size += os.path.getsize(path)
-                    except Exception as err:
-                        print(err)
-            if not self.recursive:
-                break
-        return size
+        if os.path.exists(self.directory):
+            size = 0
+            for root, dirs, files in os.walk(self.directory):
+                for file in files:
+                    path = os.path.join(root, file)
+                    if os.path.exists(path):
+                        try:
+                            size += os.path.getsize(path)
+                        except Exception as err:
+                            print(err)
+                if not self.recursive:
+                    break
+            return size
+        else:
+            raise FileNotFoundError(f'Directory {self.directory} not found!')
 
     def disk_io(self):
         res = psutil.disk_io_counters()
