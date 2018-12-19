@@ -1,0 +1,10 @@
+<keymap version="1" name="Default for GNOME copy" parent="Default for GNOME">
+  <action id="EditorLeft">
+    <keyboard-shortcut first-keystroke="left" />
+    <keyboard-shortcut first-keystroke="kp_left" />
+  </action>
+  <action id="EditorUp">
+    <keyboard-shortcut first-keystroke="up" />
+    <keyboard-shortcut first-keystroke="kp_up" />
+  </action>
+</keymap>
