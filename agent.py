@@ -2,13 +2,13 @@ import argparse
 import importlib
 import inspect
 import logging
+import os
 import sys
 import time
-import os
+from collections import Counter
+
 import confuse
 from bottle import route, run, request, response, error
-
-from collections import Counter
 
 TIKIDO_PLUGINS = {}
 for plugin_folder in os.listdir(os.path.join(os.path.dirname(__file__), 'plugins')):
@@ -33,9 +33,10 @@ if parameters['user_config']:
 #
 port = parameters['port'].get() if 'port' in parameters else 8080
 host = parameters['host'].get() if 'host' in parameters else '0.0.0.0'
-print(parameters.get())
+# print(parameters.get())
 log = logging.getLogger(__name__)
 logging.getLogger('').setLevel(logging.DEBUG)
+
 counter = Counter()
 try:
     import rainbow_logging_handler
@@ -89,14 +90,9 @@ def handler(code):
         plug = input_json['plugin']
         action_name = input_json['action']
         opts = input_json['options']
-        log.debug(plug)
-        log.debug(action_name)
-        log.debug(opts)
-    except Exception as err:
-        return return_error(err)
+        log.info(f"plug: {plug}, action_name: {action_name}, opts: {opts}")
 
-    try:
-        log.debug(f'job get. job: {input_json}')
+        log.debug(f'received job: {input_json}')
         full_module_name = f"plugins.{TIKIDO_PLUGINS[plug]['folder']}.logic"
         importlib.import_module(full_module_name)
 
@@ -127,4 +123,4 @@ def other_page(path=''):
 
 
 if __name__ == '__main__':
-    run(reloader=False, host=host, port=port, server='paste')
+    run(host=host, port=port, server='auto')

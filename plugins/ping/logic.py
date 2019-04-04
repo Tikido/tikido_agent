@@ -51,7 +51,7 @@ class Logic(IAgentCore):
 
     def ping_once(self):
         s = _socket.socket(_socket.AF_INET, _socket.SOCK_DGRAM, _socket.IPPROTO_ICMP)
-        s.settimeout(10)
+        s.settimeout(5)
         s.sendto(self.pack_packet_with_time(1), (_socket.gethostbyname(self.address), 0))
         packet, peer = s.recvfrom(1024)
         _, t = self.parse_packet_with_time(packet)

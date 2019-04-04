@@ -19,12 +19,13 @@ class Logic(IAgentCore):
         try:
             mysql_options = {"host": self.host, "port": self.port, "user": self.user, "password": self.password,
                              'connection_timeout': self.timeout}
+            log.debug(f'trying to connect to mysql @ {mysql_options}')
             self.server = mysql.connector.connect(**mysql_options)
             self.server.database = self.database
             self.cursor = self.server.cursor()
             self.cursor.execute(f"USE {self.database}")
         except mysql.connector.errors.DatabaseError as err:
-            raise ConnectionError
+            raise ConnectionError(err)
 
     def execute(self, execute_str):
         self.cursor.execute(execute_str)

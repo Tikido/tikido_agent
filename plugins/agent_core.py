@@ -27,6 +27,7 @@ class CoreBase(dict):
 
 
 class IAgentCore(CoreBase):
+
     def action(self, action_code, **kwargs):
         try:
             log.debug('🍋 Action start for %r' % action_code)

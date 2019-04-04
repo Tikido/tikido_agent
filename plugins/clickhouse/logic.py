@@ -51,4 +51,4 @@ class Logic(IAgentCore):
 
     def health(self):
         metrics, async_metrics, events = self._get_metrics()
-        return {metr['metric']: metr['value'] for metr in metrics + async_metrics}
+        return {metr['metric']: metr['value'] for metr in metrics + async_metrics + events}
