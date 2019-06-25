@@ -1,0 +1,4 @@
+meta = dict(
+    name='couchbase',
+)
+
