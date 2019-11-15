@@ -66,7 +66,7 @@ class Logic(IAgentCore):
                 log.debug(f'{n:} total delay={total_delay}')
             return {'ping': total_delay // self.PING_TIMES}
         except (_socket.gaierror, _socket.timeout, ConnectionRefusedError, ConnectionResetError, TimeoutError) as err:
-            log.exception(err)
+            log.error(f"ping {self.address} -> {err}")
             return {'ping': -1}
         except Exception as err:
             log.exception(err)

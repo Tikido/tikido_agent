@@ -8,7 +8,9 @@ import time
 from collections import Counter
 
 import confuse
-from bottle import route, run, request, response, error
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
 
 TIKIDO_PLUGINS = {}
 for plugin_folder in os.listdir(os.path.join(os.path.dirname(__file__), 'plugins')):
@@ -33,7 +35,6 @@ if parameters['user_config']:
 #
 port = parameters['port'].get() if 'port' in parameters else 8080
 host = parameters['host'].get() if 'host' in parameters else '0.0.0.0'
-# print(parameters.get())
 log = logging.getLogger(__name__)
 logging.getLogger('').setLevel(logging.DEBUG)
 
@@ -70,17 +71,17 @@ def return_error(*args):
     return dict(result='error', value=msg, vars={args})
 
 
-@error(403)
+@app.errorhandler(403)
 def mistake403():
     return 'There is a mistake in your url!'
 
 
-@error(404)
+@app.errorhandler(404)
 def mistake404():
     return 'Sorry, this page does not exist!'
 
 
-@route('/monitor/<code>', ['GET'])
+@app.route('/monitor/<code>', methods=['GET'])
 def handler(code):
     started = time.time()
     try:
@@ -98,16 +99,15 @@ def handler(code):
 
         logic = sys.modules[full_module_name].Logic(options=opts)
         ret = logic.action(action_name, **input_json['action_args'])
-        response.content_type = 'application/json'
-        if ret['result'] in {'success', 'error'}:
+        if ret['result'] in {'success', 'error', 'OK'}:
             log.debug(f'{(time.time() - started):f}. {action_name} job done. ret: {ret}')
             counter[code] += 1
-            return ret
+            return jsonify(ret)
     except Exception as err:
         return return_error(err)
 
 
-@route('/monitor/statistics', ['GET'])
+@app.route('/monitor/statistics', methods=['GET'])
 def handler_post():
     try:
         return counter
@@ -115,12 +115,12 @@ def handler_post():
         log.exception(e)
 
 
-@route('/')
-@route('/<path:path>')
+@app.route('/')
+@app.route('/<path:path>')
 def other_page(path=''):
     log.debug(path)
-    return 'OK'
+    return jsonify({'result': 'OK'})
 
 
 if __name__ == '__main__':
-    run(host=host, port=port, server='auto')
+    app.run(port=port, ssl_context=('127.0.0.1.crt', 'device.key'))

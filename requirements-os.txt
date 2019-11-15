@@ -1,7 +1,7 @@
-freetds-dev
-# centos
-#debian/ubuntu
 
+freetds-devel
+#debian/ubuntu
+# centos
 #“Basic” or “Basic Light” package for your operating system
 #http://www.oracle.com/technetwork/database/database-technologies/instant-client/overview/index.html
-freetds-devel
+freetds-dev

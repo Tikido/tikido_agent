@@ -104,3 +104,7 @@ class Logic(IAgentCore):
     def list_partitions(self):
         return {e.mountpoint: e.device for e in psutil.disk_partitions(all) if
                 e.fstype in ['ext4', 'vfat', 'fuseblk', 'NTFS']}  # fuseblk == ntfs
+
+    def list_partition_value(self):
+        disk_usage = self.disk_usage()
+        return {disk_usage: disk_usage}

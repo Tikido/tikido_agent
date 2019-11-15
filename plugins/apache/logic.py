@@ -48,7 +48,7 @@ class Logic(IAgentCore):
             values['BusyWorkers'] = int(raw_values['BusyWorkers']) / len(raw_values['Scoreboard']) * 100 // 1
             values['BytesPerSec'] = float(raw_values['BytesPerSec'])
 
-            if raw_values['ServerMPM'] != 'WinNT':  # in Windows load average not available
+            if 'ServerMPM' in raw_values and raw_values['ServerMPM'] != 'WinNT':  # in Windows load average not available
                 values['Load1'] = float(raw_values['Load1'])
                 values['Load15'] = float(raw_values['Load15'])
             else:

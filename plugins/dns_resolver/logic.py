@@ -30,7 +30,7 @@ class Logic(IAgentCore):
         time_start = time.time()
         self.connect()
         conn_time = time.time() - time_start
-        conn_time = round(conn_time, 0)
+        conn_time = round(conn_time, 6)
         log.debug('connection time: %d' % conn_time)
 
         return conn_time

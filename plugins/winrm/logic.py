@@ -30,7 +30,7 @@ class Logic(IAgentCore):
         rslt = self.sess.run_cmd('whoami')
         if rslt.status_code == 0:
             log.debug(rslt.std_out.decode('utf8'))
-            return dict(result='success', value='success',
+            return dict(result='OK', value='success',
                         vars={}
                         )
         else:

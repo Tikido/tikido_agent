@@ -1,3 +1,5 @@
+logfile: tikido_agent.log
+
 plugins:
   mysql:
     default:

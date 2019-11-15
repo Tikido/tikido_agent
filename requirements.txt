@@ -1,18 +1,18 @@
-elasticsearch
-#-e git+https://github.com/jborean93/pywinrm.git#egg=pywinrm
-psycopg2-binary
 cx_Oracle
 dnspython
-#-e git+https://github.com/dctikan/pywinrm.git#egg=pywinrmhttps://github.com/Phxntxm/pywinrm/archive/master.zip
-pystalkd
 pymongo
-redis
-jmxquery
-#pywinrm
-# https://github.com/mzupan/nagios-plugin-mongodb/blob/master/check_mongodb.py
-
-requests
-pymssql
-mysql-connector-python
-lxml
 psutil
+
+https://github.com/Phxntxm/pywinrm/archive/master.zip
+#-e git+https://github.com/jborean93/pywinrm.git#egg=pywinrm
+pystalkd
+requests
+psycopg2-binary
+# https://github.com/mzupan/nagios-plugin-mongodb/blob/master/check_mongodb.py
+redis
+#-e git+https://github.com/dctikan/pywinrm.git#egg=pywinrmelasticsearch
+jmxquery
+lxml
+pymssql
+#pywinrm
+mysql-connector-python
